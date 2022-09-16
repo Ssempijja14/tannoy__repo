@@ -1,0 +1,132 @@
+.tny__icons,.tny__icons svg {
+    display: inline-block
+}
+
+.tny__icons svg {
+    vertical-align: middle;
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+    width: .75rem;
+    height: .75rem
+}
+
+.btn__tny.btn__dashed {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    margin-top: 15px;
+    text-decoration: none;
+    line-height: 1;
+    height: 3.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (min-width: 651px) {
+    .btn__tny.btn__dashed {
+        width:auto;
+        height: 2.8125rem
+    }
+}
+
+.btn__tny svg.outline {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-dasharray: 332,17,214,11;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dashoffset .75s cubic-bezier(.19,1,.22,1);
+    color: #FFC917;
+}
+
+.btn__tny:hover svg.outline {
+    stroke-dashoffset: 200
+}
+
+.btn__label.btn__txt {
+    font-family: Xenois Soft Pro;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 100;
+    line-height: 1;
+    white-space: nowrap
+}
+
+.btn__arrow {
+    margin-left: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+/**/
+.btn__ptf {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-family: Futura Medium;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 15px 45px;
+    border-radius: 26px;
+    border: none;
+}
+
+.btn__ptf:hover {
+    color: #1F2227;
+}
+
+.btn__ptf:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(44, 163, 219, 0.25);
+}
+
+@media only screen and (max-width: 480px) {
+    .btn__ptf {
+        padding: 12px 35px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn__ptf {
+        transition: none;
+    }
+}
+
+.btn__ptf.btn__ptf-primary {
+    background-color: #FFC917;
+    color: #fff;
+}
+
+.btn__ptf.btn__ptf-primary:hover {
+    background-color: #FFC917;
+    color: #fff;
+}
+
+.btn__ptf.btn__ptf-primary.active {
+    background-color: #2CA3DB;
+    color: #fff;
+}

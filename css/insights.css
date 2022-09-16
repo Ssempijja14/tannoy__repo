@@ -1,0 +1,595 @@
+
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+*,:after,:before {
+    box-sizing: border-box
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+article,aside,figcaption,footer,header,hgroup,main,section {
+    display: block
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent
+}
+
+img {
+    border-style: none
+}
+
+img,svg {
+    vertical-align: middle
+}
+/*
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+*/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199.98px) {
+    .container {
+        max-width:100%
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:100%
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width:1600px
+    }
+}
+
+@media (min-width: 2000px) {
+    .container {
+        max-width:1600px
+    }
+}
+
+body section {
+    z-index: 1;
+    position: relative
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-auto,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-auto,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-auto,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-auto {
+    position: relative;
+    width: 100%;
+    /*padding-right: 15px;
+    padding-left: 15px*/
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%
+    }
+
+    .col-lg-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%
+    }
+
+}
+
+html {
+    font-size: 16px
+}
+
+body,html {
+    overflow-x: hidden
+}
+
+body {
+    font-family: Futura Light;
+    color: #333f48;
+    font-size: 18px;
+    font-size: 1.125rem
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    outline: none
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size:15px
+    }
+}
+
+
+/************************************/
+/************************************/
+/************************************/
+/************************************/
+.bg-dark {
+    background-color: #002159
+}
+
+.cover {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.two-line-elipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+/*
+section .container .row a {
+    font-family: Futura Bold;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    opacity: .8;
+    text-decoration: none;
+    padding-bottom: 1px
+}
+
+section .container .row a:hover {
+    color: #009a44;
+    text-decoration: none;
+    opacity: 1
+}
+*/
+
+/**/
+.post__wrapper {
+    margin-bottom: 20px;
+    padding: 25px;
+    z-index: 9999;
+    border-radius: 25px;
+}
+.post__inner {
+    background-color: #0052C8;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.post__inner:hover {
+    -webkit-box-shadow: 0 0 35px 0 rgba(0,87,184,.2);
+    -moz-box-shadow: 0 0 35px 0 rgba(0,87,184,.2);
+    box-shadow: 0 0 35px 0 rgba(0,87,184,.2)
+}
+
+.post__wrapper .post__inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    height: 100%
+}
+
+.row {
+    margin: 2px
+}
+
+/* The title & description */
+.post__wrapper .post__inner .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: auto
+}
+
+.post__wrapper .post__inner .text-content .featured-title {
+    margin-top: 0;
+    margin-bottom: auto
+}
+
+/* Body text */
+.post__wrapper p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff
+}
+
+.post__wrapper.grid-item p {
+    font-size: 17px
+}
+
+.post__wrapper .text-content {
+    padding-bottom: 0
+}
+
+.post__wrapper .tags-wrapper {
+    margin-top: 5px
+}
+
+.post__wrapper.grid-item {
+    position: relative;
+    z-index: 1
+}
+
+.post__wrapper.grid-item:hover {
+    cursor: default!important
+}
+
+.post__wrapper.grid-item .post__inner .text-content .featured-title {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-bottom: unset;
+    margin-bottom: 0
+}
+
+.post__wrapper.grid-item .post__inner .text-content .section-title-medium,
+.post__wrapper.grid-item .post__inner .text-content .section-title-medium:first-child {
+    margin-top: 20px;
+    margin-bottom: 16px
+}
+
+.section-title-medium {
+    font-family: Futura Bold;
+    font-size: 8px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.875rem
+}
+
+@media (min-width: 768px) and (max-width:991.98px) {
+    .section-title-medium {
+        font-size: 4px;
+        font-size: 1.5rem;
+        line-height: 30px;
+        line-height: 1.875rem
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199.98px) {
+    .section-title-medium {
+        font-size: 4px;
+        font-size: 1.5rem;
+        line-height: 30px;
+        line-height: 1.875rem
+    }
+}
+
+.text-content h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #FFC917;
+    font-weight: 100;
+}
+
+/*
+.post__wrapper:hover h4.section-title-medium {
+    color: #0d5ca9;
+}
+*/
+
+
+@media (max-width: 620px) {
+    .container {
+        padding:0 33px
+    }
+}
+
+@media (max-width: 767px) {
+    .post__wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+
+    .tags-wrapper,
+    .tags-wrapper,
+    .post__wrapper .tags-wrapper {
+        margin-top: 20px
+    }
+}
+
+@media (min-width: 768px) and (max-width:991.98px) {
+    .post__wrapper {
+        padding: 30px 20px 50px
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199.98px) {
+    .post__wrapper {
+        padding: 30px 20px 50px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:none
+    }
+}
+
+.post__wrapper img {
+    height: 230px;
+    min-height: 180px;
+    border-radius: 10px;
+}
+
+.post__wrapper .text-content {
+   /* padding: 8px 0;*/
+    padding: 0;
+    padding-top: 8px;
+}
+
+.post__wrapper .tag {
+    margin-bottom: 16px;
+    color: #333f48;
+    opacity: .4;
+    font-size: 14px;
+    font-weight: 700
+}
+/**/
+
+/**
+.post__wrapper:hover {
+    cursor: pointer;
+    -webkit-box-shadow: -1px 0 10px rgba(0,87,184,.18);
+    -moz-box-shadow: -1px 0 10px rgba(0,87,184,.18);
+    box-shadow: -1px 0 10px rgba(0,87,184,.18);
+    transition: box-shadow .3s ease-in-out
+}
+/**
+
+/**/
+@media (max-width: 768px) {
+    .post__wrapper {
+        margin-bottom: 1.875rem
+    }
+}
+
+.content__category {
+    font-family: Futura Medium;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* Xenois_Soft_Pro_font */
+@font-face {
+    font-family: Xenois Soft Pro;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro.otf") format('truetype');
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Light;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light.otf") format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro LightIt;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light\ Italic.otf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Bold;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Bold.otf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Heavy;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Heavy.otf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: Xenois Soft W01 Bold;
+    src: url(../../fonts/Xenois\ Soft\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Book;
+    src: url(../../fonts/Futura\ Book.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Medium;
+    src: url(../../fonts/Futura\ Medium\ Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Light;
+    src: url(../../fonts/Futura\ Light.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Tondo Bold;
+    src: url(../../fonts/Tondo\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+.post__wrapper .featured-tags {
+    margin-top: 15px;
+    margin-bottom: 5px
+}
+
+.post__wrapper .post__inner .tags-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 6px
+}
+
+.post__wrapper .post__inner .blog-img-border {
+    position: relative;
+    margin-bottom: 0
+}
+
+.post__wrapper .post__inner .tags-wrapper,
+.post__wrapper .post__inner .blog-img-border {
+    flex-grow: 0
+}
+
+.post__wrapper .featured-tags a {
+    text-decoration: none!important;
+    background-color: #FFC917;
+    padding: 8px 20px;
+    margin-right: 10px;
+    opacity: 1;
+    border: 1px solid #FFC917;
+    border-radius: 20px;
+    z-index: 9997;
+    font-size: 12px!important;
+    font-weight: 100;
+    display: inline-block
+}
+
+.post__wrapper .featured-tags a:last-child {
+    margin-right: 0
+}
+
+.post__wrapper .featured-tags a:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+/* The actual tag */
+.post__wrapper .featured-tags .tag {
+    color: #fff;
+    font-weight: 100;
+    font-family: Futura Book;
+    font-size: 14px;
+    white-space: pre;
+    opacity: 1;
+    /*opacity: .8*/
+}
+
+.post__wrapper .featured-tags .tag:hover {
+    color: #FFC917;
+}

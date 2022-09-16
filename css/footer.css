@@ -1,0 +1,550 @@
+/**/
+footer {
+    display: block;
+    background-color: #00397B;
+    height: max-content;
+}
+
+.ftr {
+    width: 100%;
+    padding: 400px 80px;
+    overflow: hidden
+}
+
+.ftr {
+    position: relative;
+    z-index: 10
+}
+
+.ftr>a {
+    display: inline-block;
+    float: right;
+    letter-spacing: .2em;
+    margin-top: 13px
+}
+
+.ftr>a:hover {
+    font-family: 'Xenois Soft Pro Bold'
+}
+
+
+.ftr .second-part-footer .footer-center {
+    margin: 0 10px
+}
+
+/* Footer logo */
+.ftr .second-part-footer .footer-center .footer-logo {
+    display: flex;
+    justify-content: center;
+}
+/**/
+.ftr .second-part-footer .footer-center .footer-logo {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ftr .second-part-footer .footer-center .footer-logo .footer-module__contact-us-logo {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    margin-top: 17px;
+}
+
+.ftr .second-part-footer .footer-center .footer-logo .footer-module__contact-us-logo img {
+    max-width: 378px;
+    max-height: 70px;
+    height: 100%;
+    width: 100%;
+}
+
+.ftr .menufooter {
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    margin-bottom: 25px
+}
+
+.ftr .menufooter>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ftr .menufooter>ul>li {
+    display: inline-flex;
+    font-family: "Xenois Soft Pro Bold";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    font-weight: 100;
+    justify-content: center;
+    color: #ffdc2e;
+    width: 1%;
+    margin-left: 7%;
+    margin-right: 7%
+}
+
+.ftr .menufooter>ul>li>a {
+    color: #ffdc2e;
+    transition: 600ms all
+}
+
+.ftr .menufooter>ul>li>a:hover {
+    color: #fff;
+    transition: 600ms all
+}
+
+.ftr .second-part-footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ftr .second-part-footer .footer-adresse {
+    min-width: 300px
+}
+
+.ftr .second-part-footer .footer-adresse .address__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr .second-part-footer .footer-adresse .address__inner .address__item {
+    display: block;
+    width: 100%;
+    color: #ffdc2e;
+    font-size: 16px;
+    line-height: 2.0;
+    font-family: "Xenois Soft Pro Light";
+    letter-spacing: 1px;
+    padding-bottom: 15px
+}
+
+.ftr .second-part-footer .footer-adresse .address__inner .address__item a {
+    color: #ffdc2e;
+    line-height: 2;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms
+}
+
+.ftr .second-part-footer .footer-adresse .address__inner .address__item a:hover {
+    color: #fff
+}
+
+@media (max-width: 1600px) {
+    .ftr {
+        width: 100%;
+        padding: 20px 9vw!important;
+    }
+
+    .ftr .menufooter {
+        display: block;
+        margin-top: 40px;
+        padding-top: 10px;
+        width: 97%;
+    }
+
+    .ftr .menufooter ul {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 30px;
+    }    
+    
+    .ftr .second-part-footer {
+        padding: 0;
+        padding-top: 140px;
+        width: 100%
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    footer {
+        padding-top: 160px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ftr {
+        display: block!important
+    }
+}
+
+@media (max-width: 1200px) {
+    .ftr .menufooter>ul {
+        flex-wrap: wrap
+    }
+}
+
+@media (max-width: 1000px) {
+    .ftr .second-part-footer .footer-center {
+        grid-column:1 / 5;
+        grid-row: 2
+    }
+
+}
+
+@media (max-width: 600px) {
+    .ftr {
+        width: 100%;
+        padding: 20px 10px!important
+    }
+
+    .ftr .second-part-footer .footer-center {
+        grid-column: 1 / 6;
+        grid-row: 3
+    }
+
+    .ftr .second-part-footer .footer-adresse>ul {
+        display: block;
+        text-align: center
+    }
+
+    .ftr .second-part-footer .footer-adresse>ul>li {
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .ftr {
+        padding: 20px 60px
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .ftr .second-part-footer .footer-center {
+        margin: 0 20px
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ftr .second-part-footer {
+        flex-direction: column
+    }
+
+    .ftr .second-part-footer .footer-center {
+        order: 0;
+        margin-bottom: 40px
+    }
+
+    .ftr .second-part-footer .footer-adresse:nth-of-type(1) {
+        order: 1;
+        margin-bottom: 40px
+    }
+
+    .ftr .second-part-footer .footer-adresse:last-child {
+        order: 2
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .ftr {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .ftr>ul {
+        float: none;
+        text-align: center
+    }
+
+    .ftr>a {
+        display: block;
+        float: none;
+        text-align: center;
+        margin: 0
+    }
+
+    .ftr .second-part-footer .footer-center {
+        margin-bottom: 30px
+    }
+
+    .ftr .second-part-footer .footer-adresse>ul>li {
+        padding-bottom: 5px
+    }
+
+    .ftr .second-part-footer .footer-adresse:nth-of-type(1) {
+        margin-bottom: 30px
+    }
+
+    .ftr .menufooter>ul>li {
+        margin: 10px
+    }
+}
+
+[class^="icon-"],[class*=" icon-"] {
+    font-family: "Font Awesome 5 Free"; 
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+    text-transform: none;
+    line-height: 1;
+    speak: none; 
+}
+
+
+
+.icon-address::before {   
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f5a0";
+    font-size: 20px; 
+    font-weight: 900;
+    color: #fff;
+    margin-right: 20px;
+
+}
+
+.icon-phone::after {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f87b";    
+    font-size: 20px; 
+    line-height: 1.9;
+    font-weight: 900;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.icon-mail::after {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f658";    
+    font-size: 19px; 
+    font-weight: 900;
+    color: #fff;
+    margin-left: 20px;
+
+}
+
+.icon-article::after {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\e905";
+    font-size: 20px; 
+    font-weight: 900;
+    color: #FBB410;
+}
+
+.icon-bookmark:before {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\e906";
+    font-size: 20px; 
+    font-weight: 900;
+    color: #FBB410;
+}
+
+/* BROCHURE */
+
+.titre {
+    font-family: Xenois Soft Pro Bold
+}
+
+.titre_big {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #0052C8;
+}
+
+@media only screen and (min-width: 992px) {
+    .titre_big {
+        font-size: 28px;
+        line-height: 60px
+    }
+}
+
+.titre_big br {
+    display: none
+}
+
+@media only screen and (min-width: 992px) {
+    .titre_big br {
+        display:block
+    }
+}
+
+.texte {
+    font-family: Xenois Soft Pro Light;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 100
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #0052C8;
+    border-radius: 5px;
+    padding: 11px 30px;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: .3s ease background-color;
+    transition: background-color .3s ease;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.06);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.06);
+    border: none;
+    cursor: pointer
+}
+
+.bouton p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bouton p span {
+    font-family: Xenois Soft Pro Bold;
+    font-weight: 100;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase
+}
+
+.bouton:hover {
+    background-color: #003082
+}
+
+.brochure {
+    padding: 440px 0 230px;
+    position: relative;
+    z-index: 9999;
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure {
+        padding:50px 0 0px;
+        margin-bottom: -100px;
+    }
+}
+
+.brochure-content {
+    position: relative;
+    border-radius: 20px;
+    background-color: #FFC917;
+    padding: 75px 30px 50px;
+    text-align: center
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content {
+        text-align:left;
+        padding: 70px 0 70px 525px
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .brochure-content {
+        padding:70px 80px 70px 665px
+    }
+}
+
+.brochure-content h2 {
+    line-height: 1
+}
+
+.brochure-content .texte {
+    color: #fff;
+    margin: 22px 0;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 200
+}
+
+.brochure-content .texte br {
+    display: none
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content .texte br {
+        display:block
+    }
+}
+
+.brochure-content img.depliant {
+    position: absolute;
+    top: 50%;
+    width: 375px;
+    top: 0;
+    -webkit-transform: translateY(-73%) translateX(-37%);
+    -ms-transform: translateY(-73%) translateX(-37%);
+    transform: translateY(-73%) translateX(-37%)
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content img.depliant {
+        top:50%;
+        left: 30px;
+        width: 585px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .brochure-content img.depliant {
+        left:105px
+    }
+}
+
+
+/***************************************/
+.footer__contact {
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 1px;/*
+    padding: 1.25rem;*/
+}
+
+.footer__contact:nth-child(even) {
+    margin-top: 20px;
+}
+
+.footer__contact .media-body {
+    font-family: Xenois Soft Pro;
+    font-size: 17px;
+    color: #FFE83E;
+    margin-top: 8px;
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+}
+
+.footer__contact .media-body>div {
+    margin-bottom: 10px;
+}
+
+.footer__contact .media-body>div a {
+    color: #FFE83E;
+}
+
+.contact__avatar-sm {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    vertical-align: top;
+    border-radius: 50%;
+    min-width: 25px;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: rgb(241, 241, 241);
+    color: #FFE83E;
+}

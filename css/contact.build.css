@@ -1,0 +1,75 @@
+
+*,*::before,*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html:focus-within {
+    scroll-behavior: smooth
+}
+
+body,figure,blockquote,dl,dd {
+    margin: 0
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5
+}
+
+a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto
+}
+
+img,picture {
+    max-width: 100%;
+    display: block
+}
+
+@media(prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto
+    }
+
+    *,*::before,*::after {
+        -webkit-animation-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+        -webkit-transition-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important
+    }
+}
+
+body {
+    font-family: "Bliss";
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-rendering: geometricPrecision;
+    left: 0;
+    right: 0
+}
+
+html {
+    margin-top: 0 !important;
+    min-height: 100vh
+}
+
+/***********************************************/
+.container {
+    width: calc(100% - 50px);
+    max-width: 1450px;
+    margin: 0 auto
+}
+
+.map {
+    height: 500px
+}
+
+.has-blue-background-color {
+    background-color: #00afda
+}

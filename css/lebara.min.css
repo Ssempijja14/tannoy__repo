@@ -1,0 +1,388 @@
+
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Xenois Soft W01 Bold;
+    src: url(../../fonts/Xenois\ Soft\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Tondo Bold;
+    src: url(../../fonts/Tondo\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+/**/
+@media (min-width: 1320px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+body {
+    color: #555555;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff
+}
+
+section {
+    padding-bottom: 3rem
+}
+
+button.close {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 8px;
+    left: 3;
+    right: 8px;
+    border: 1px solid
+}
+
+button.close:hover, 
+button.close:focus, 
+button.close:active {
+    box-shadow: none;
+    outline: none
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin: 0
+}
+
+#main {
+    position: relative
+}
+
+@media (min-width: 1320px) {
+    .container {
+        max-width: 1320px
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        padding-bottom: 3rem
+    }
+}
+
+/**/
+.mobile-plan-cat-wrapper {
+    margin-top: 20px;
+    position: relative
+}
+
+/**/
+.mobile-plan-cat-wrapper ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.mobile-plan-cat-wrapper ul li {
+    display: inline-block;
+    padding: 0 3px;
+    /*width: 40%*/
+}
+
+/**/
+.mobile-plan-cat-wrapper p.line-h {
+    line-height: 1
+}
+
+.mobile-plan-cat-wrapper p.size {
+    font-size: 16px
+}
+
+.mobile-plan-cat-wrapper .block {
+    padding: 1rem 0;
+    position: relative
+}
+/**/
+.mobile-plan-cat-wrapper .gb-month-group {
+    position: relative;
+    padding: 2px 0 10px
+}
+
+.mobile-plan-cat-wrapper .gb-month-group::before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background: #000000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.mobile-plan-cat-wrapper .gb-month-group:nth-child(2)::before {
+    display: none
+}
+
+@media (min-width: 1320px) {
+    .mobile-plan-cat-wrapper {
+        margin-top: 50px
+    }
+}
+
+.mobile-plan-cat-wrapper .container {
+    position: relative
+}
+
+@media (max-width: 767.98px) {
+    .mobile-plan-cat-wrapper .block {
+        padding: 5px 0;
+        height: auto
+    }
+}
+
+.swiper {
+    width: 248px;
+    margin: auto
+}
+
+@media (min-width: 1320px) {
+    .swiper {
+        width: 1320px;
+        overflow: hidden
+    }
+}
+/**/
+.swiper-slide {
+    height: unset
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 0
+}
+
+.product-card {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: white
+}
+
+.product-card__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    background-color: #f9f9f9
+}
+
+.product-card__debug {
+    display: none;
+    position: absolute;
+    opacity: 0.5;
+    right: 0;
+    background: #f9f9f9;
+    color: black;
+    font-family: monospace
+}
+
+.product-card__block {
+    display: flex;
+    flex-direction: column
+}
+
+.product-card__block--blue {
+    background-color: #0052C8;
+    padding-top: 20px
+}
+
+
+.product-card__block--red {
+    background: #FFC917
+}
+
+.product-card__block--header {
+    height: 80px;
+    justify-content: center
+}
+
+.product-card__planinfo-link {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    display: block
+}
+
+@media (min-width: 1320px) {
+    .product-card__planinfo-link {
+        margin-bottom: 30px
+    }
+}
+
+.product-card__title {
+    font-family: Xenois Soft W01 Bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.product-card__price {
+    font-family: Dax Light;
+    font-size: 44px;
+    font-weight: 100
+}
+
+@media (min-width: 1320px) {
+    .product-card__price {
+        font-size: 20px;
+        line-height: 1.7
+    }
+}
+
+@media (min-width: 1320px) {
+    .product-card__price--home {
+        font-size: 60px
+    }
+}
+
+.product-card__data {
+    font-family: Xenois Soft W01 Bold;
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #FFC917;
+}
+
+@media (min-width: 1320px) {
+    .product-card__data {
+        font-size: 48px;
+        margin-top: 4px
+    }
+}
+
+
+.product-card__buy-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: none;
+    color: white;
+    border: 2px solid #FFC917;
+    border-radius: 50px;
+    margin: 20px 0;
+    padding: 10px 70px
+}
+
+@media (min-width: 1320px) {
+    .product-card__buy-button {
+        margin: 0px 0
+    }
+}
+
+/* Oblique banner */
+.tip-drape {
+    font-family: Futura Bold;
+    text-transform: uppercase;
+    position: absolute;
+    background: white;
+    color: #FFC917;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 30px;
+    top: 28px;
+    left: -35px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
+}
+
+@media (min-width: 992px) {
+    .tip-drape {
+        font-size: 12px
+    }
+}
+
+.product-card__previous-price {
+    font-weight: 400;
+    font-size: 14px;
+    height: 17px
+}
+
+@media (min-width: 1320px) {
+    .product-card__previous-price {
+        line-height: 17px
+    }
+}
+
+.product-card__data-sub {
+    font-family: Futura Bold;
+    font-weight: 400;
+    font-size: 14px;
+    height: 21px
+}
+
+.product-card__description {
+    font-family: Futura Bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003082;
+    font-weight: 100;
+    padding: 20px 0;
+    margin-top: 20px
+}
+
+.product-card:hover {
+    box-shadow: 1px 10px 30px rgba(0,0,0,0.13)
+}
+
+.product-card__icon-feature {
+    width: 49%;
+    background-color: white;
+    padding: 20px 25px
+}
+
+.product-card__icon-feature-text {
+    font-size: 12px;
+    font-weight: 400
+}
+
+@media (min-width: 1320px) {
+    .product-card__icon-feature-text {
+        font-size: 14px
+    }
+}
+
+.swiper .product-card {
+    height: 100%
+}
+
+@media (min-width: 768px) {
+    .swiper-container {
+        padding: 0 0 30px 0;
+        width: 100%
+    }
+}
+

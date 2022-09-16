@@ -1,0 +1,98 @@
+
+body.hide-x-scroll-main main {
+    overflow-x: hidden
+}
+
+@media(min-width: 768px) {
+    .md-outerspace {
+        padding-bottom: 96px;
+        padding-top: 96px
+    }
+
+    img.md-outerspace {
+        margin-bottom: 32px;
+        margin-top: 32px;
+        padding-bottom: 0;
+        padding-top: 0
+    }
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+img {
+    max-width: 100%
+}
+/*
+img,svg {
+    margin-bottom: 16px;
+    vertical-align: bottom
+}
+*/
+.hidden-overflow-x {
+    overflow-x: hidden
+}
+
+.component-a:last-child>*:last-child {
+    margin-bottom: 0
+}
+
+.component-a h2 {
+    font-family: Xenois Soft W01 Bold;
+    color: #FFC917;
+    font-size: 42px;
+    line-height: 1.5;
+}
+
+.component-a p {
+    font-family: Dax Light;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media(min-width: 1024px) {
+    .flex-container {
+        height: 100%;
+    }
+}
+
+.flex-container::before,
+.flex-container::after {
+    display: none
+}
+
+.flexCol {
+    display: flex
+}
+
+.flexCol.alignItemsStretch {
+    align-items: stretch
+}
+
+.flexCol.alignContentStretch {
+    align-content: stretch
+}
+
+.flexCol.justifyCenter {
+    justify-content: center
+}
+
+.flexCol.wrap {
+    flex-wrap: wrap
+}
+
+.flexCol.noWrap {
+    flex-wrap: nowrap
+}
+
+.flexCol,.no-flex {
+    flex-direction: column
+}

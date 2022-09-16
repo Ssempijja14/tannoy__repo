@@ -1,0 +1,230 @@
+[class^="icon-"],[class*=" icon-"] {
+    font-family: "Font Awesome 5 Free"; 
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+    text-transform: none;
+    line-height: 1;
+    speak: none; 
+}
+
+
+.icon-arrow-left::before {   
+    content: "\f104";
+    font-size: 26px; 
+    font-weight: 900;
+    color: #fff;
+
+}
+
+.icon-arrow-right:before {
+    content: "\f105";    
+    font-size: 26px; 
+    font-weight: 900;
+    color: #fff;
+}
+
+.btn-reset {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    line-height: 1;
+    border-radius: 0;
+    border: none
+}
+
+a,.trans-color {
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out
+}
+
+.nav-slider {
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-slider .nav-slider-button .prev-button{
+    position: absolute;
+    top: 10%;
+    left: -3%;
+    z-index: 999;
+}
+
+.nav-slider .nav-slider-button .next-button {
+    position: absolute;
+    right: 90%;
+    z-index: 999;
+}
+
+.nav-slider-button {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    background-color: #FBB410;
+    -webkit-transition: border-color 0.5s ease-in-out,background-color 0.5s ease-in-out;
+    -o-transition: border-color 0.5s ease-in-out,background-color 0.5s ease-in-out;
+    transition: border-color 0.5s ease-in-out,background-color 0.5s ease-in-out;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.nav-slider-button span {
+    font-size: 13px;
+    color: #a1a1a4;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out
+}
+
+.nav-slider-button:focus:active,
+.nav-slider-button:focus,
+.nav-slider-button:active,
+.nav-slider-button:hover {
+    border: 2px solid #fff;
+    background-color: #fff
+}
+/*
+.nav-slider-button:focus:active span,
+.nav-slider-button:focus span,
+.nav-slider-button:active span,
+.nav-slider-button:hover span {
+    color: #55555a
+}
+*/
+.nav-slider-button:hover ::before {
+    color: #FBB410
+}
+
+.next-button {
+    right: 0;
+    float: right
+}
+
+.nav-slider-button.prev-button span {
+    margin-right: 2px;
+    display: inline-block;
+    vertical-align: 0;
+    *display: inline;
+    *zoom:1
+}
+
+.nav-slider-button.next-button span {
+    margin-left: 2px;
+    display: inline-block;
+    vertical-align: 0;
+    *display: inline;
+    *zoom:1
+}
+
+.nav-slider .next-button:hover span {
+    -webkit-animation: toRightFromLeft 0.3s forwards;
+    -o-animation: toRightFromLeft 0.3s forwards;
+    animation: toRightFromLeft 0.3s forwards
+}
+
+.nav-slider .prev-button:hover span {
+    -webkit-animation: toLeftFromRight 0.3s forwards;
+    -o-animation: toLeftFromRight 0.3s forwards;
+    animation: toLeftFromRight 0.3s forwards
+}
+
+@-webkit-keyframes toRightFromLeft {
+    49% {
+        -webkit-transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes toRightFromLeft {
+    49% {
+        -moz-transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        -moz-transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes toLeftFromRight {
+    49% {
+        -webkit-transform: translate(-100%)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes toLeftFromRight {
+    49% {
+        -moz-transform: translate(-100%)
+    }
+
+    50% {
+        opacity: 0;
+        -moz-transform: translate(100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+@keyframes toLeftFromRight {
+    49% {
+        transform: translate(-100%)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+

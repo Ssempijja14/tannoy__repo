@@ -1,0 +1,193 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    -ms-overflow-style: scrollbar;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background-color: #003082;
+}
+
+.component__spacing-bottom {
+    margin-bottom: 10px
+}
+
+@media screen and (min-width: 768px) {
+    .component__spacing-bottom {
+        margin-bottom: 15px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .component__spacing-bottom {
+        margin-bottom: 20px
+    }
+}
+
+.background__center__cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.header__featured-headline {
+    font-family: Xenois Soft Pro;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFC917;
+    line-height: 32px;
+    letter-spacing: -0.43px;
+    padding-bottom: 10px;
+}
+
+.header__featured-description p {
+    font-family: Xenois Soft Pro Light;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: -0.1px;
+    padding-bottom: 20px
+}
+
+.header__featured-category {
+    font-family: Xenois Soft Pro Bold;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 13px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.topic-header__row-content-top {
+    background-color: #0052C8;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.topic-header__container>.container {
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    color: #000;
+    margin-top: 0
+}
+
+.topic-header__row-content {
+    margin-left: 0
+}
+/*
+.topic-header__row-content>.col-12 {
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0
+}
+*/
+.header__featured-image {
+    position: relative;
+    width: 100%;
+    padding-top: 70%
+}
+
+.header__featured-image .background__image {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%
+}
+
+.header__featured-image .background__center__cover {
+    height: 100%;
+    width: 100%;
+    transition: all .5s
+}
+
+.header__featured-content--wrapper:hover .background__center__cover,
+.header__featured-content--wrapper:focus .background__center__cover,
+.header__featured-content--wrapper:active .background__center__cover {
+    transform: scale(1.05)
+}
+
+.header__featured-content--wrapper .header__featured-image .background__image {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .topic-header__row-content-top {
+        margin-left:0;
+        margin-right: 0
+    }
+
+    .header__featured-image {
+        margin-right: -10px
+    }
+
+    .header__featured-content--wrapper {
+        width: 100%;
+        margin: 0
+    }
+
+    .header__featured-content--wrapper .header__featured-content,
+    .header__featured-content--wrapper .header__featured-image-container {
+        padding-left: 20px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .topic-header__container>.container {
+        margin-top: 0
+    }
+
+    .header__featured-headline {
+        font-size: 36px;
+        line-height: 1.4;
+        letter-spacing: 0
+    }
+
+    .header__featured-description {
+        line-height: 26px;
+        padding-bottom: 10px
+    }
+
+    .header__featured-category {
+        margin: 20px 0;
+        padding-bottom: 20px
+    }
+
+    .topic-header__row-content-top {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .header__featured-content--wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        padding-left: 0px;
+        margin: 0
+    }
+
+    .header__featured-content--wrapper .header__featured-content {
+        padding-left: 20px;
+        padding-right: 50px
+    }
+
+    .header__featured-content--wrapper .header__featured-image-container {
+        padding: 0;
+        padding-right: 0px
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .topic-header__row-content {
+        margin-left:0px;
+        margin-right: 0px
+    }
+}

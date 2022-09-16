@@ -1,0 +1,129 @@
+html,body,div,span,applet,object,iframe,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-weight: normal;
+    list-style: none
+}
+
+body,html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Xenois Soft Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    /* Causes bug in vertical scroll *
+    overflow-x: hidden;*/
+    width: 100%;
+    height: 100%;
+    height: auto!important;
+    position: relative
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background: #002159;
+    color: #1b1b1b;
+    text-rendering: optimizelegibility;
+    font-feature-settings: "kern" 1;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    line-height: 1.5;
+    width: 100vw;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: visible;
+    /*padding-top: 64px;*/
+}
+
+body:after {
+    bottom: 0;
+    transform-origin: bottom
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: inherit;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+:active,:focus {
+    outline: none!important
+}
+
+a,a:active,a:hover,a:visited {
+    outline: 0;
+    text-decoration: none
+}
+
+a {
+    color: #102348;
+    transition: all .3s ease;
+    outline: 0
+}
+
+::selection {
+    background: #003db8;
+    color: #fff;
+    text-shadow: none
+}
+
+::-moz-selection {
+    background: #003db8;
+    color: #fff;
+    text-shadow: none
+}
+
+::placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::-ms-input-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::-webkit-input-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+img {
+    display: inline-block;
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}

@@ -1,0 +1,237 @@
+
+/* Xenois_Soft_Pro_font */
+@font-face {
+    font-family: Xenois Soft Pro;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro.otf") format('truetype');
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Light;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light.otf") format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro LightIt;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light\ Italic.otf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Bold;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Bold.otf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Heavy;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Heavy.otf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: Xenois Soft W01 Bold;
+    src: url(../../fonts/Xenois\ Soft\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Brassiere;
+    src: url(../../fonts/Brassiere.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Book;
+    src: url(../../fonts/Futura\ Book.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Medium;
+    src: url(../../fonts/Futura\ Medium\ Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Light;
+    src: url(../../fonts/Futura\ Light.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Tondo Bold;
+    src: url(../../fonts/Tondo\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+.bg__dark {
+    background-color: #002159;
+}
+
+.bg__light {
+    background-color: #0052C8;
+}
+
+::selection {
+    color: #fff;
+    background: #3960ff
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #3960ff
+}
+
+::-moz-selection {
+    background: white
+}
+
+::selection {
+    background: white
+}
+
+
+::-moz-selection {
+    background: rgba(39,60,131,0.05)
+}
+
+::selection {
+    background: rgba(39,60,131,0.05)
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    /*margin: 0 12vw;*/
+    position: relative;
+    max-width: 1148px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width:100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        /*margin: 0 12vw;*/
+
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding-top: 3rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin: 0 auto;
+        /*margin: 0 12vw;*/
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        padding-right: 1.9rem;
+        padding-left: 1.9rem
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        -webkit-box-pack:center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;/*
+        padding-left: 0;
+        padding-right: 0;*/
+        margin: 0 auto;
+        /*margin: 0 12vw;*/
+        max-width:76vw;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1400px;
+        max-width:76vw;
+    }
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    clear: both
+}
+
+.container-fluid:before,
+.container-fluid:after {
+    content: " ";
+    display: table
+}
+
+.container-fluid:after {
+    clear: both
+}

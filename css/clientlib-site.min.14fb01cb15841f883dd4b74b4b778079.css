@@ -1,0 +1,257 @@
+.card-wrapper {
+    padding: 0 10px;
+}
+.card {
+    /*padding: 2rem 0;*/
+    padding: 0rem 0;
+    overflow-wrap: break-word;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #0052C8;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding:1rem 0
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        height: 680px;
+    }
+}
+
+.card .cmp-card {
+    height: 100%;
+    display: block
+}
+
+.card .cmp-card.cardImagePosition--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.card .cmp-card .card-body {
+    /*padding: .625rem*/
+    padding: 0;
+    border-radius: 15px;
+}
+
+/*
+.card .cmp-card .card-body>p:first-child {
+    margin: .75rem 0!important
+}
+*/
+.card .cmp-card .card--center {
+    text-align: center
+}
+
+.card .cmp-card .card-packageDescription {
+    font-family: Futura Light;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 5!important
+}
+
+.card .cmp-card .card-price {
+    font-family: Xenois Soft Pro Heavy;
+    font-weight: 700;
+    color: #FFC917;
+    font-size: 2.75rem;
+    font-size: 60px;
+    line-height: 2rem;
+    /*margin-top: .75rem!important*/
+    margin-top: 30px
+}
+
+.card .cmp-card .card-price--recurrence {
+    font-size: 1.25rem;
+    letter-spacing: .75px;
+}
+
+.card .cmp-card .card-priceSubText {
+    font-family: Futura Book;
+    color: #fff;
+    font-size: 1rem;
+    font-size: 16px;
+    margin: 0 auto 1.5rem!important
+}
+
+/* Plan characteristics list */
+.card .cmp-card ul.checkmarkStyle li .linklist__checkmark {
+    padding-top: 0
+}
+
+.card .cmp-card li {
+    border-bottom: 1px solid var(--dc-theme-grey--light2);
+    /*padding-bottom: 1rem*/
+    padding-bottom: 3px
+}
+
+.card .cmp-card li p {
+    font-size: 15px
+}
+
+.card .cmp-card li:first-of-type p {
+    /*font-size: 1.25rem;*/
+    font-weight: 700
+}
+
+.card .cmp-card li:first-of-type p:before {
+    font-size: 1rem;
+    line-height: 1.75rem
+}
+
+.card .cmp-card li:last-child p {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0!important
+}
+
+.card .cmp-card .link-list {
+    padding: 0 1rem!important;
+    margin-bottom: 0!important
+}
+
+.linklist ul.link-list.checkmarkStyle {
+    list-style-type: none
+}
+
+.linklist ul.link-list.checkmarkStyle li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .75rem;
+}
+
+.linklist ul.link-list.checkmarkStyle li .linklist__checkmark {
+    font-family: Material Icons;
+    padding-top: .0rem;
+    padding-right: .95rem;
+    color: #68CF25;
+}
+
+.linklist ul.link-list.checkmarkStyle li p {
+    font-family: Futura Book,sans-serif;
+    color: #fff;
+    white-space: normal;
+    display: block;
+    margin-bottom: 0!important
+}
+
+.linklist ul li .rte,
+.linklist ul li p {
+    display: inline-block
+}
+
+.linklist ul li .material-icons {
+    color: #828282;
+    font-size: 1rem;
+    line-height: 1rem;
+    position: relative;
+    top: 3px;
+    padding-left: .25rem
+}
+
+/*******************************/
+
+
+.product-card__block {
+    display: flex;
+    flex-direction: column
+}
+
+.product-card__block--blue {
+    background-color: #0052C8;
+    padding-top: 20px
+}
+
+
+.product-card__block--red {
+    background: #FFC917;
+    border-radius: 15px 15px 0 0;
+}
+
+.product-card__block--header {
+    font-size: 18px;
+    font-family: Xenois Soft Pro Bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    height: 70px;
+    justify-content: center
+}
+
+
+.product-card__description {
+    font-family: Futura Book;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003082;
+    font-weight: 100;
+    padding: 20px 0;
+    margin-top: 20px
+}
+
+.product-card__buy-button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid #FFC917;
+    border-radius: 50px;
+    margin: 20px 0;
+    padding: 12px 65px
+}
+
+@media (min-width: 1320px) {
+    .product-card__buy-button {
+        margin: 0px 0
+    }
+}
+
+/* Oblique banner */
+.tip-drape {
+    font-family: Futura Bold;
+    text-transform: uppercase;
+    position: absolute;
+    background: #002159;
+    color: #FFC917;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 45px;
+    top: 20px;
+    left: -18px;
+    /*box-shadow: 0 0 5px rgba(0,0,0,0.5)*/
+}
+
+@media (min-width: 992px) {
+    .tip-drape {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+/**/
+.card .linklist span.material-icons {
+    flex-grow: 2;
+    text-align: right;
+}
+
+.card .linklist span.material-icons a {
+    color: #fff;
+}

@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    --mdc-theme-primary: #0D47FB;
+    --mdc-theme-primary--light1: #4A75FC;
+    --mdc-theme-primary--light2: #6E91FD;
+    --mdc-theme-primary--light3: #CFDAFE;
+    --mdc-theme-primary--light4: #E6ECFF;
+    --mdc-theme-primary--dark1: #0A39C9;
+
+
+    --mdc-theme-error: #ff182f;
+    --mdc-theme-error--light: #ffebea;
+
+    --dc-theme-warning: #f2b61b;
+    --dc-theme-warning--light: #fae2af;
+    --dc-theme-success--light: #ebf9ed;
+
+    --mdc-shape-small-component-radius: 4px;
+    --mdc-shape-medium-component-radius: 4px;
+    --mdc-shape-large-component-radius: 0px;
+}
+
+@media (min-width: 1200px) {
+    body .container {
+        max-width: 1100pt;
+    }
+}
+
+@media screen and (max-width:991px){
+    body {
+        padding-top: 60px !important
+    }
+}
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    font-family: Futura Book, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000
+}
+
+a {
+    text-decoration: none;
+    color: var(--mdc-theme-primary);
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar
+}
+
+/* Xenois_Soft_Pro_font */
+@font-face {
+    font-family: Xenois Soft Pro;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro.otf") format('truetype');
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Light;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light.otf") format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro LightIt;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light\ Italic.otf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Bold;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Bold.otf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Heavy;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Heavy.otf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Book;
+    src: url(../../fonts/Futura\ Book.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Medium;
+    src: url(../../fonts/Futura\ Medium\ Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Light;
+    src: url(../../fonts/Futura\ Light.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Xenois Soft W01 Bold;
+    src: url(../../fonts/Xenois\ Soft\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Tondo Bold;
+    src: url(../../fonts/Tondo\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+*,:after,:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+body {
+    background-color: #002159;
+}
+
+.container-l {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container-l {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container-l {
+        max-width:45pc
+    }
+}
+
+@media (min-width: 992px) {
+    .container-l {
+        max-width:60pc
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-l {
+        max-width:855pt
+    }
+}
+
+.row-l {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-auto,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-auto,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-auto,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width: 576px) {
+    .col-sm-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%
+    }
+}
+
+button {
+    font: inherit
+}
+
+body {
+    word-break: break-word
+}
+
+/**/
+.page p {
+    margin-bottom: 1rem !important
+}
+
+.page a {
+    margin-bottom: 0 !important
+}
+
+.page ul p,  
+.page ul,  
+.page a {
+    margin-top: 0 !important
+}
+
+body.page p {
+    font-size: 1.25rem
+}
+
+.link-list {
+    margin-bottom: 2rem!important
+}
+
+.link-list {
+    padding-left: 0px !important
+}
+
+body p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height:1.4;
+}
+/*
+body .mdc-button {
+    font-size: .875rem;
+}
+
+html body .cta .mdc-button,
+html body .addCartCTA .mdc-button{
+    min-height: 3.25rem;
+}
+
+.mdc-button {
+    font-family: ' Work Sans', Helvetica, sans-serif;
+}
+
+/*
+.mdc-theme-primary,
+.mdc-theme-primary a {
+    color: #0D47FB;
+    color: var(--mdc-theme-primary);
+    border-color: #0D47FB;
+    border-color: var(--mdc-theme-primary);
+}
+/*
+button.mdc-button,
+a.mdc-button,
+body .mdc-button {
+    font-weight: 700;
+    font-size: .875rem;
+    letter-spacing: .0125rem;
+}
+
+body .mdc-button:hover {
+    background-color: rgba(13, 71, 251, 0.1);
+}
+
+body .mdc-button.mdc-button--raised:hover {
+    background-color: #0A39C9;
+    background-color: var(--mdc-theme-primary--dark1);
+}
+
+body .mdc-button {
+    padding: 0 1.5rem;
+    border-radius: 0px;
+    min-width: 120px;
+}
+
+body .mdc-button.mdc-button--raised {
+    padding: 0 1.5rem;
+}
+
+body .mdc-button--raised::before,
+body .mdc-button--raised::after,
+body .mdc-button--raised:not(:disabled) {
+    background-color: #0D47FB;
+    background-color: var(--mdc-theme-primary);
+}
+
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+.responsive-columns__row--center {
+    text-align: center
+}
+
+@media only screen and (min-width: 576px) {
+    .responsive-columns__row--desktop-left {
+        text-align:left
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ptMobile-25 {
+        padding-top:25px!important
+    }
+
+    .pbMobile-25 {
+        padding-bottom: 25px!important
+    }
+}
+
+.pt-50 {
+    padding-top: 50px
+}
+
+.pb-50 {
+    padding-bottom: 50px
+}
+
+.p-xy {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.cmp-separator.cmp-separator_padding-10 {
+    padding: 10px 0
+}
+
+/*
+body .cta .mdc-button {
+    height: auto;
+    min-height: 2.5rem;
+    padding: 0 1.75rem
+}
+*/
+
+@media screen and (max-width: 991px) {
+    html body {
+        padding-top:0!important
+    }
+}
+
+.cmp-text {
+    font-family: Futura Light;
+    color: #FFC917;
+    padding-left: 20px;
+}
+
+.cmp-cta {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.cmp-cta__cta--center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center
+}
+
+@media only screen and (max-width: 575px) {
+    .cmp-cta__ctaMobile--center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center
+    }
+}

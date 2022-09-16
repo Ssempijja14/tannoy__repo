@@ -1,0 +1,125 @@
+body {
+    background-color: #003082;
+}
+/*
+.c-anchor-block {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    top: 0
+}
+*/
+
+.two__column .posts__wrapper {
+    position: relative;
+    margin: 35px 0 40px;
+}
+
+.two__column .posts__wrapper .posts__inner .post__item:last-child .blog__card {
+    border: 0
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card {
+    padding: 25px;
+    background-color: #0052C8;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .two__column .posts__wrapper .posts__inner .post__item .blog__card {
+        padding-top:20px;
+        padding-bottom: 10px
+    }
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner {
+    position: relative;
+    align-items: flex-start
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__thumb {
+    /*max-width: 200px;*/
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 25px;
+    flex: 1 0 45%;
+    position: relative;
+    height: 175px;
+}
+
+@media (max-width: 1024px) {
+    .two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__thumb {
+        max-width:160px
+    }
+}
+
+@media (max-width: 991px) {
+    .two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__thumb {
+        max-width:120px
+    }
+}
+
+@media (max-width: 480px) {
+    .two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__thumb {
+        max-width:60px
+    }
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__thumb img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__txt {
+    flex-grow: 1
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__txt .item_category {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__txt h3 {
+    font-family: Xenois Soft Pro;
+    font-size: 17px;
+    color: #FFC917;
+    margin-top: 12px;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 0
+}
+
+@media (max-width: 767px) {
+    .two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__txt h3 {
+        font-size:1.125rem;
+        margin-top: 0
+    }
+}
+
+.two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__txt p {
+    font-family: Xenois Soft Pro;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 10px
+}
+
+@media (max-width: 767px) {
+    .two__column .posts__wrapper .posts__inner .post__item .blog__card .blog__inner .content__txt p {
+        font-size:1.125rem;
+        margin-top: 0
+    }
+}

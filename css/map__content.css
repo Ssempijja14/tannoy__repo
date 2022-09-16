@@ -1,0 +1,167 @@
+/**/
+@media only screen and (min-width: 768px)and (max-width:960px) {
+    [class*=tp-col-]:not(:last-child) {
+        margin-right:3.0581818182%
+    }
+}
+/**
+@media only screen and (min-width: 961px) {
+    [class*=col-]:not(:last-child) {
+        margin-right:2.3818181818%
+    }
+}
+/**/
+@media only screen and (min-width: 768px)and (max-width:960px) {
+    .tp-col-5 {
+        width:39.8827272727%
+    }
+
+    .tp-col-5 [class*=col-]:not(:last-child) {
+        margin-right: 7.3396363636%
+    }
+}
+/**/
+@media only screen and (min-width: 961px) {
+    .col-4 {
+        width:31.7454545455%
+    }
+
+    .col-4 .col-4 {
+        width: 100%
+    }
+
+    .col-4 [class*=col-]:not(:last-child) {
+        margin-right: 7.1454545455%
+    }
+}
+/**/
+.overflow-hidden {
+    overflow: hidden
+}
+/*
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Ubuntu,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    color: #000;/*
+    background: #fff*
+}
+*/
+.map__wrapper {
+    padding-right: 5.3vw;
+    padding-left: 5.3vw
+}
+
+@media only screen and (min-width: 768px) {
+    .map__wrapper {
+        padding-right:6.1vw;
+        padding-left: 6.1vw
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .location__finder {
+        margin-top: 280px;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .map__wrapper {
+        /*padding-right:6.59vw;
+        padding-left: 6.59vw;*/
+        padding-right:16vw;
+        padding-left: 16vw;
+    }
+}
+
+@media only screen and (min-width: 2049px) {
+    .map__wrapper {
+        padding-right:calc(50vw - 889px);
+        padding-left: calc(50vw - 889px)
+    }
+}
+
+.map__shadow {
+    background: #FFC917;
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0,.1)
+}
+
+.contactMap {
+    z-index: 11;/*
+    padding-top: 12rem;
+    padding-bottom: 12rem;*/
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 767px) {
+    .contactMap {
+        margin-top:21rem
+    }
+}
+
+.contactMap__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.contactMap__map .map {
+    height: 600px;
+}
+
+.has-blue-background-color {
+    background-color: #00afda
+}
+
+/**/
+.contactMap__card {
+    position: relative;
+    z-index: 3;
+    /*padding: 7rem 6.16%;*/
+    padding: 30px 50px
+}
+
+@media only screen and (max-width: 767px) {
+    .contactMap__card {
+        margin-top:-34rem;
+        margin-bottom: 34rem;
+        padding: 13%
+    }
+}
+
+.contactMap__card h3 {
+    font-family: Xenois Soft Pro Bold;
+    color: #003082;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.contactMap__card .info__address {
+    border-top: 2px solid #003082;
+    padding-top: 15px;
+}
+
+.contactMap__card .info__address {
+    font-family: Xenois Soft Pro;
+    color: #003082;
+    font-size: 15px;
+    line-height: 2.1;
+}
+
+.contactMap__card .info__link {
+    font-family: Xenois Soft Pro;
+    color: #003082;
+    font-size: 15px;
+    margin-left: -.5rem;
+    padding: 0 .5rem;
+    color: #fff;
+}

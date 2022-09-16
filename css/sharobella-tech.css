@@ -1,0 +1,250 @@
+/**/
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+
+}
+
+.techs_parts__inner {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: block;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+@media only screen and (max-width: 1370px) and (min-width:1051px) {
+    .techs_parts__inner {
+        padding:6.8430656934vw 5.4744525547vw
+    }
+}
+
+@media only screen and (max-width: 1050px) and (min-width:861px) {
+    .techs_parts__inner {
+        padding:6.7142857143vw 5.3714285714vw
+    }
+}
+
+@media only screen and (max-width: 860px) and (min-width:641px) {
+    .techs_parts__inner {
+        padding:6.511627907vw 5.2093023256vw
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__inner {
+        padding:13.3333333333vw 5.3333333333vw;
+        justify-content: flex-end;
+        padding-top: 13.3333333333vw;
+        padding-bottom: 13.3333333333vw
+    }
+}
+
+.techs_parts__title {
+    font-family: Xenois Soft Pro Heavy;
+    color: #FFC917;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__title {
+        width:100%;
+        order: 0;
+        font-size: 9.6vw;
+        line-height: 9.0666666667vw
+    }
+}
+
+.techs_parts__wrap {
+    width: 100%;
+    margin-top: 35px
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__wrap {
+        order:1;
+        margin: 9.3333333333vw 0 10.6666666667vw
+    }
+}
+
+.techs_parts__icons {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: none
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__icons {
+        justify-content:space-between;
+        border: none
+    }
+}
+.techs_parts__item {
+    position: relative;
+    width: 25%;
+    transition: box-shadow .35s
+}
+
+.techs_parts__item:nth-child(4n-1),
+.techs_parts__item:nth-child(4n-2),
+.techs_parts__item:nth-child(4n-3),
+.techs_parts__item:nth-child(4n-4),
+.techs_parts__item:nth-child(4n-5) {
+    border: 1px solid rgba(255, 255, 255, 0.08)
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__item {
+        width:42.6666666667vw;
+        margin-bottom: 2.6666666667vw;
+        border: 1px solid rgba(255, 255, 255, 0.08)
+    }
+}
+
+.techs_parts__item__icon {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 47.222%;
+    background: #002159
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__item__icon {
+        padding-bottom:62.5%
+    }
+}
+
+.techs_parts__item__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    will-change: transform,opacity;
+    display: block;/*
+    opacity: .8;*/
+    transition: transform .85s cubic-bezier(.39,.575,.565,1),opacity .35s
+}
+
+@media only screen and (max-width: 640px) {
+    .techs_parts__item__img {
+        object-fit:contain;
+        transform: scale(1.2)
+    }
+}
+
+.techs_parts__item:hover .techs_parts__item {
+    box-shadow: 0 10px 50px rgba(237,246,244,.6)
+}
+
+.techs_parts__item:hover .techs_parts__item__img {
+    transform: scale(1.1);
+    opacity: 1
+}
+
+/* Xenois_Soft_Pro_font */
+@font-face {
+    font-family: Xenois Soft Pro;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro.otf") format('truetype');
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Light;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light.otf") format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro LightIt;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light\ Italic.otf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Bold;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Bold.otf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Heavy;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Heavy.otf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: Xenois Soft W01 Bold;
+    src: url(../../fonts/Xenois\ Soft\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Bold;
+    src: url(../../fonts/Futura\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Book;
+    src: url(../../fonts/Futura\ Book.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Medium;
+    src: url(../../fonts/Futura\ Medium\ Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Futura Light;
+    src: url(../../fonts/Futura\ Light.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Tondo Bold;
+    src: url(../../fonts/Tondo\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}

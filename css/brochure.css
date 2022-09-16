@@ -1,0 +1,330 @@
+*,:after,:before {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none
+}
+
+body,html {
+    font-size: 100%;
+    background-color: #0052C8;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: Open Sans,sans-serif;
+    overflow-x: hidden;
+    height: auto!important
+}
+
+dd,dl,dt,li,ol,ul {
+    margin: 0;
+    padding: 0
+}
+
+::-moz-selection {
+    background: #003db8;
+    color: #fff;
+    text-shadow: none
+}
+
+::selection {
+    background: #003db8;
+    color: #fff;
+    text-shadow: none
+}
+
+:active,:focus {
+    outline: none!important
+}
+
+ol,p,pre,table,ul {
+    margin: 0;
+    list-style: none
+}
+
+a {
+    text-decoration: none!important
+}
+
+a,img {
+    border: none
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 60px)
+}
+
+@media only screen and (min-width: 640px) {
+    .container {
+        width:540px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width:768px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width:992px
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        width:1260px
+    }
+}
+
+.titre {
+    font-family: Xenois Soft Pro Bold
+}
+
+.titre_big {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #0052C8;
+}
+
+@media only screen and (min-width: 992px) {
+    .titre_big {
+        font-size: 28px;
+        line-height: 60px
+    }
+}
+
+.titre_big br {
+    display: none
+}
+
+@media only screen and (min-width: 992px) {
+    .titre_big br {
+        display:block
+    }
+}
+
+.texte {
+    font-family: Xenois Soft Pro Light;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 100
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #0052C8;
+    border-radius: 5px;
+    padding: 11px 30px;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: .3s ease background-color;
+    transition: background-color .3s ease;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.06);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.06);
+    border: none;
+    cursor: pointer
+}
+
+.bouton p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bouton p span {
+    font-family: Xenois Soft Pro Bold;
+    font-weight: 100;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase
+}
+
+.bouton:hover {
+    background-color: #003082
+}
+
+:-ms-input-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::-webkit-input-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::-ms-input-placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+::placeholder {
+    color: #4f4697;
+    opacity: 1
+}
+
+.brochure {
+    padding: 440px 0 230px
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure {
+        padding:50px 0 360px
+    }
+}
+
+.brochure-content {
+    position: relative;
+    border-radius: 20px;
+    background-color: #FFC917;
+    padding: 75px 30px 50px;
+    text-align: center
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content {
+        text-align:left;
+        padding: 70px 0 70px 525px
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .brochure-content {
+        padding:70px 80px 70px 665px
+    }
+}
+
+.brochure-content h2 {
+    line-height: 1
+}
+
+.brochure-content .texte {
+    color: #fff;
+    margin: 22px 0;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 200
+}
+
+.brochure-content .texte br {
+    display: none
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content .texte br {
+        display:block
+    }
+}
+
+.brochure-content img.depliant {
+    position: absolute;
+    top: 50%;
+    width: 375px;
+    top: 0;
+    -webkit-transform: translateY(-73%) translateX(-37%);
+    -ms-transform: translateY(-73%) translateX(-37%);
+    transform: translateY(-73%) translateX(-37%)
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content img.depliant {
+        top:50%;
+        left: 30px;
+        width: 585px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .brochure-content img.depliant {
+        left:105px
+    }
+}
+
+.brochure-content img.forme {
+    position: absolute;
+    bottom: -108px;
+    width: 125px;
+    right: 40px
+}
+
+@media only screen and (min-width: 992px) {
+    .brochure-content img.forme {
+        bottom:-145px;
+        width: 190px;
+        right: 55px
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .footer .container {
+        padding:0 30px
+    }
+}
+
+/* Xenois_Soft_Pro_font */
+@font-face {
+    font-family: Xenois Soft Pro;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro.otf") format('truetype');
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Light;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light.otf") format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro LightIt;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Light\ Italic.otf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Bold;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Bold.otf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Xenois Soft Pro Heavy;
+    src: url("../../fonts/Linotype\ -\ Xenois\ Soft\ Pro\ Heavy.otf") format('truetype');
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: Xenois Soft W01 Bold;
+    src: url(../../fonts/Xenois\ Soft\ W01\ Bold.otf);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+}
+
+/******************************/

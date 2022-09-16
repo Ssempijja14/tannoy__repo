@@ -1,0 +1,92 @@
+
+a,button {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+a:hover,a:active,a:focus,
+button:hover,
+button:active,
+button:focus {
+    text-decoration: none
+}
+
+.btn {
+    white-space: normal
+}
+
+.head {
+    margin-bottom: 80px
+}
+
+@media(max-width: 991.98px) {
+    .head {
+        margin-bottom:40px
+    }
+}
+
+.contact-title {
+    font-family: Xenois Soft Pro Light;
+    color: #FFC917;
+    margin: 16px 0
+}
+
+.contact-text {
+    font-family: Xenois Soft Pro Light;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0
+}
+
+.contact-info ul li {
+    font-family: Xenois Soft Pro Light;
+    color: #fff;
+    margin-bottom: 14px;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -moz-align-items: normal;
+    -ms-align-items: normal;
+    align-items: normal;
+    -moz-justify-content: normal;
+    -ms-justify-content: normal;
+    justify-content: normal;
+    -ms-flex-pack: normal;
+    flex-wrap: initial;
+    display: flex
+}
+
+.contact-info ul li a,
+.contact-info ul li span,
+.contact-info ul li img {
+    color: inherit;
+    display: block
+}
+
+.contact-info ul li .item-icon {
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    flex-wrap: initial;
+    display: flex
+}
+
+.contact-info ul li .item-icon img {
+    width: auto;
+    height: 24px
+}
+
+.contact-info ul li:last-child {
+    margin-bottom: 0
+}

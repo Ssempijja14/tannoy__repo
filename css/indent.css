@@ -1,0 +1,169 @@
+
+.layer--relative {
+    position: relative !important
+}
+
+
+.intro {
+    color: white;
+    /*padding: 20vh 0;*
+    background-color: rgba(170,170,170,0.03);/*
+    display: flex;
+    justify-content: center;**/
+    position: relative;
+    z-index: 1;
+
+}
+
+@media (max-width: 767px) {
+    .intro {
+        justify-content:flex-start;
+        padding: 120px 0
+    }
+}
+
+.intro__caption {
+    /*padding: 0 60px;*/
+    max-width: 600px;
+    position: relative;
+    margin: 0 12vw;
+
+}
+
+@media (min-width: 1440px) {
+    .intro__caption {
+        max-width:900px;
+        padding: 60px 0 40px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .intro__caption {
+        width:100%;
+        padding: 0 30px;
+        margin: 0 12vw;
+
+    }
+}
+
+.subtitle {
+    font-family: Xenois Soft Pro Bold;
+    font-size: 32px;
+    margin: 10px 0
+}
+
+.indent {
+    padding-left: 100px;
+    position: relative
+}
+
+@media (min-width: 1440px) {
+    .indent {
+        padding-left:160px
+    }
+}
+
+@media (max-width: 767px) {
+    .indent {
+        padding-left:0
+    }
+}
+
+.intro__caption p {
+    font-family: Xenois Soft Pro Light;
+}
+
+.intro__caption h1 {
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Xenois Soft W01 Bold";
+    color: #FFC917;
+}
+
+@media (min-width: 1440px) {
+    .intro__caption h1 {
+        font-size:70px;
+        letter-spacing: 5px
+    }
+}
+
+@media (max-width: 767px) {
+    .intro__caption h1 {
+        font-size:32px
+    }
+}
+
+@media (min-width: 1440px) {
+    .intro__caption p {
+        font-size:20px;
+        line-height: 1.9;
+        margin-top: 20px;
+        margin-bottom: 5px
+    }
+}
+
+@media (max-width: 767px) {
+    .intro__caption p {
+        font-size:14px
+    }
+}
+
+.button__wiper {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: 'Teko';
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 0 40px;
+    background-color: transparent;
+    color: currentColor;
+    cursor: pointer
+}
+
+.button__text {
+    position: relative;
+    z-index: 1;
+    transition: 0.125s ease;
+    display: block
+}
+
+.button__background {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border: 1px solid rgba(255,255,255,0.2)
+}
+
+.button__background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.3s ease
+}
+
+.button__wiper:hover {
+    color: black
+}
+
+.button__wiper:hover .button__background:before {
+    transform: scaleX(1);
+    transform-origin: left center
+}
